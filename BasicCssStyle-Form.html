@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表單樣式類別</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        hr.style-one {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+    </style>
+  </head>
+  <body>
+    <h3>基本表單</h3>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="userEmail">電子郵件</label>
+                <input type="email" class="form-control" id="userEmail">
+            </div>
+            <div class="form-group">
+                <label for="userPWD">密碼</label>
+                <input type="password" class="form-control" id="userPWD">
+            </div>
+            <button type="submit" class="btn btn-default">送出</button>
+        </form>
+    </div>  
+    <hr class="style-one">
+    <h3>水平表單</h3>
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="userEmail" class="col-sm-2 control-label">電子郵件</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="userEmail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userPWD" class="col-sm-2 control-label">密碼</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="userPWD">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">送出</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+    <hr class="style-one">
+    <h3>輸入欄位 - 日期</h3>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="userBirthday">生日</label>
+                <input type="date" class="form-control" id="userBirthday">
+            </div>
+            <button type="submit" class="btn btn-default">送出</button>
+        </form>
+    </div>  
+    <hr class="style-one">
+    <h3>輸入欄位 - 多行文字</h3>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="userIntro">自我介紹</label>
+                <textarea class="form-control" rows="5" id="userIntro"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">送出</button>
+        </form>
+    </div>  
+    <hr class="style-one">
+    <h3>選項按鈕</h3>
+    <div class="container">
+        <form>
+            最高學歷：
+            <label class="radio-inline"><input type="radio" name="education" value="e1">高中(含以下)</label>
+            <label class="radio-inline"><input type="radio" name="education" value="e2" checked>大專</label>
+            <label class="radio-inline disabled"><input type="radio" name="education" value="e3" disabled>研究所(含以上)</label>
+        </form>
+    </div>
+    <hr class="style-one">
+    <h3>核取方塊</h3>
+    <div class="container">
+        <form>
+            <div class="checkbox">
+                <label><input type="checkbox" name="interest[]" value="travel" checked>旅遊</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="interest[]" value="reading">閱讀</label>
+            </div>
+            <div class="checkbox disabled">		
+                <label><input type="checkbox" name="interest[]" value="music" disabled>音樂</label>
+            </div>  
+        </form>
+    </div>
+    <hr class="style-one">
+    <h3>下拉式清單</h3>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="county">選擇居住縣市：</label>
+                <select class="form-control" id="county">
+                    <option value="台北市">台北市
+                    <option value="新北市" selected>新北市
+                    <option value="台中市">台中市
+                    <option value="台南市">台南市
+                    <option disabled value="高雄市">高雄市
+                </select>
+            </div>
+        </form>
+    </div>
+    <hr class="style-one">
+  </body>
+</html>

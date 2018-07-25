@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - 元件樣式</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        hr.style-one {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+    </style>
+  </head>
+  <body>
+    <h3>大區塊效果</h3>
+	<div class="jumbotron">
+        <div class="container">
+          <h1>印象&middot;左岸奧塞美術館30週年大展</h1>
+          <p>本特展為紀念奧塞美術館建館30週年所推出，從珍貴館藏中挑選作品，展現西方19世紀的藝術成果。</p>
+          <p>陳列室：故宮博物院北部院區第二展覽區圖書文獻大樓一樓特展區</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">購票&raquo;</a></p>
+        </div>      
+    </div>
+    <hr class="style-one">
+    <h3>警報效果 - 可關閉</h3>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+          <a href="#" class="alert-link"><strong>年終特惠!</strong></a>
+          雙十連假出國馬上報名一人現折3000元！
+        </div>
+    </div>  
+    <hr class="style-one">
+    <h3>縮圖效果</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="photo1.jpg">
+                    <div class="caption">
+                        <h3>奧地利真善美湖區</h3>
+                        <p>特別企劃，帶您閒情漫遊歐洲最美的小鎮！</p>
+                        <p><a href="#" class="btn btn-primary" role="button">詳細資料</a></p>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="photo2.jpg">
+                    <div class="caption">
+                        <h3>奧地利熊布朗宮</h3>
+                        <p>特別企劃，入內參觀一探哈布斯堡王朝的繁盛興衰！</p>
+                        <p><a href="#" class="btn btn-primary" role="button">詳細資料</a></p>
+                    </div>
+                </div>	
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail"> 		
+                    <img src="photo3.jpg">
+                    <div class="caption">
+                        <h3>北海道雪的美術館</h3>
+                        <p>特別企劃，獨家雪的美術館體驗浪漫藝術氣息！</p>
+                        <p><a href="#" class="btn btn-primary" role="button">詳細資料</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>  
+    <hr class="style-one">
+    <h3>下拉式選單</h3>
+    <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                旅遊 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">國外</li>
+                <li><a href="#">國外團體</a></li>
+                <li><a href="#">國外自由行</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">國內</li>
+                <li><a href="#">國內團體</a></li>
+                <li class="disabled"><a href="#">國內自由行</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="style-one">
+    <h3>導覽列</h3>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- 這段主要當寬度小於設定時, 會將導覽列的主體做改變. icon-bar 這個屬性相對於導覽列中的主題數 -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">日光旅遊</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">導覽按鈕</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>          
+            </div>
+            <!-- -->
+            <!-- 這是導覽列主體 -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首頁</a></li>
+                    <li><a href="#">票券</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                        訂房 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">國內訂房</a></li>
+                            <li><a href="#">國外訂房</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+    </nav>
+    <hr class="style-one">
+  </body>
+</html>
